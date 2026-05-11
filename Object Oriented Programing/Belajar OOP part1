@@ -1,0 +1,24 @@
+//ini class tanpa construktor
+class MahasiswaTeladan{
+    String nama;
+    int umur;
+    String jenisKelamin;
+
+    //constructor
+    MahasiswaTeladan(String inputNama, int inputUmur, String inputKelamin){
+        nama = inputNama;
+        umur = inputUmur;
+        jenisKelamin = inputKelamin;
+
+        System.out.println(nama);
+        System.out.println(umur);
+        System.out.println(jenisKelamin);
+    }
+}
+
+public class Mahasiswa {
+    public static void main(String[] args)throws Exception{
+        MahasiswaTeladan mahasiswa1 = new MahasiswaTeladan("Iqbal", 19,"laki-laki");
+        System.out.println(mahasiswa1);
+    }
+}
