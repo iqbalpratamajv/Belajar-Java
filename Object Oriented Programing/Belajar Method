@@ -1,0 +1,53 @@
+//ini class tanpa construktor
+class MahasiswaTeladan{
+    String nama;
+    int umur;
+    String jenisKelamin;
+
+    //constructor
+    MahasiswaTeladan(String inputNama, int inputUmur, String inputKelamin){
+        this.nama = inputNama;
+        this.umur = inputUmur;
+        this.jenisKelamin = inputKelamin;
+    }
+
+    // method tanpa return dan tanpa parameter
+    void tampilkan(){
+        System.out.println("Nama         : "+ this.nama);
+        System.out.println("Umur         : "+ this.umur);
+        System.out.println("Jenis Kelamin: "+ this.jenisKelamin);
+    }
+
+    //method tanpa return dan dengan parameter
+    void setNama(String nama){
+        this.nama = nama;
+    }
+
+    //method dengan return dan tanpa parameter
+    String getNama(){
+        return this.nama;
+    }
+    int getUmur(){
+        return this.umur;
+    }
+
+    //method dengan return dan dengan parameter
+    String kasihAba(String pesan){
+        return pesan + " Halo, yang baca ganteng, kamu adalah "+ this.nama;
+    }
+}
+
+public class Mahasiswa {
+    public static void main(String[] args)throws Exception{
+        MahasiswaTeladan mahasiswa1 = new MahasiswaTeladan("Iqbal", 19,"laki-laki");
+        mahasiswa1.tampilkan();
+        mahasiswa1.setNama("Lubis");
+        mahasiswa1.tampilkan();
+        
+        System.out.println(mahasiswa1.getNama());
+        System.out.println(mahasiswa1.getUmur());
+
+        String data = mahasiswa1.kasihAba("Imutssss");
+        System.out.println(data);
+    }
+}
