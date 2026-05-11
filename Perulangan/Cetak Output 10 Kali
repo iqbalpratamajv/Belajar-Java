@@ -1,0 +1,8 @@
+public class Tabel81 {
+    public static void main(String[] args)throws Exception{
+        for(int a = 1; a<= 10; a++){
+            System.out.println("Selamat datang");
+
+        }
+    }
+}
