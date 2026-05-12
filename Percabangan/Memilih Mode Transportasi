@@ -1,0 +1,38 @@
+package FungsiPercabangan;
+import java.util.Scanner;
+public class PilihModeTransportasi {
+    public static void main(String[] args)throws Exception{
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("== Mode Transportasi ==");
+        System.out.println("1. Kereta api");
+        System.out.println("2. Bus");
+        System.out.println("3. Pesawat Terbang");
+        System.out.print("Pilih Mode Transportasi Anda: ");
+        byte pilihan = sc.nextByte();
+        System.out.println(" ");
+        
+        switch (pilihan) {
+            case 1:
+                int harga1 = 56000;
+                System.out.println("Anda Memilih Trasnportasi Kereta Api");
+                System.out.println("Total Harga Yang Harus Anda Bayar Rp " + harga1);
+                break;
+            case 2:
+                int harga2 = 23000;
+                System.out.println("Anda Memilih Trasnportasi Bus");
+                System.out.println("Total Harga Yang Harus Anda Bayar Rp " + harga2);
+                break;
+            case 3:
+                int harga3 = 1500000;
+                System.out.println("Anda Memilih Trasnportasi Pesawat Terbang");
+                System.out.println("Total Harga Yang Harus Anda Bayar Rp " + harga3);
+                break;
+            default:
+                System.out.println("Input Tidak Valid");
+                break;
+        }
+
+        sc.close();
+    }
+}
