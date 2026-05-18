@@ -1,0 +1,58 @@
+package Belajar;
+
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class MethodDua {
+    static Scanner input = new Scanner(System.in);
+
+    static void menu(){
+        System.out.println("== Selamat datang ==");
+        System.out.println("1. Tambah barang");
+        System.out.println("2. Tampilkan barang");
+        System.out.println("3. Urutkan nama barang");
+        System.out.println("4. Keluar");
+        System.out.print("Pilih menu: ");
+        
+    }
+
+    static void menuSatu(){
+        System.out.print("Masukkan jumlah barang: ");
+        int jumlahBarang = input.nextInt();
+
+        String[] namaBarang = new String[jumlahBarang];
+        int[] hargaBarang = new int[jumlahBarang];
+        menuTiga(namaBarang);
+
+        for(int i = 0; i < jumlahBarang; i++){
+            System.out.println("Masukkan nama barang ke-"+(1+i)+": ");
+            namaBarang[i] = input.next();
+            System.out.print("Harga barang: Rp");
+            hargaBarang[i] = input.nextInt();
+        }
+    }
+
+    static void menuTiga(String[] namaBarang){
+
+        for(int i = 0; i < namaBarang.length; i++){
+            System.out.println(namaBarang.length);
+        }
+    }
+    public static void main(String[] args){
+        
+        do{
+            menu();
+            int pilihMenu = input.nextInt();
+            switch (pilihMenu) {
+                case 1:
+                    menuSatu();
+                    break;
+                case 2:
+                    
+                    break;
+                default:
+                    break;
+            }
+        }while();
+    }
+}
